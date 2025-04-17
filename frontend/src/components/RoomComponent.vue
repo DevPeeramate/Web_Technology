@@ -146,7 +146,7 @@ export default {
         // ตัวเลือกใน dropdown
         { value: null, text: "All" },
         { value: "Standard Room", text: "Standard Room" },
-        { value: "Luxury Roo", text: "Luxury Room" },
+        { value: "Luxury Room", text: "Luxury Room" },
         { value: "Suite Room", text: "Suite Room" },
       ],
       optionFloor: [

@@ -87,7 +87,7 @@ export default {
       if (cf) {
         axios
           .delete(
-            `http://localhost:3000/myReview/${username}/${id}`
+            `http://localhost:3000/review/${username}/${id}`
           )
           .then((res) => {
             console.log(res);

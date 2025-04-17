@@ -123,9 +123,9 @@
                 Upload
               </button>
 
-              <button class="btn btn-xs btn-sub" type="submit" :disabled="!buttonDisable">
+              <!-- <button class="btn btn-xs btn-sub" type="submit" :disabled="!buttonDisable">
                 บันทึก
-              </button>
+              </button> -->
               
               <router-link to="/AdminHome" style="text-decoration: none">
                 <button class="btn btn-xs btn-menu">Menu</button>
@@ -137,9 +137,9 @@
           
         
         <!-- ปุ่มอัพโหลดและบันทึก -->
-        <!-- <div class="d-flex justify-content-center mt-4">
+        <div class="d-flex justify-content-center mt-4">
           <button class="btn btn-xs btn-primary" type="submit" :disabled="!buttonDisable">บันทึก</button>
-        </div> -->
+        </div>
       </form>
       <!-- <p v-if="backendMessage == 'success'" class="alert alert-success mt-3">
         ลงทะเบียนสำเร็จ-{{ backendMessage }}</p>
@@ -274,7 +274,7 @@ export default {
       };
       try {
         console.log("is this room id" + this.roomId);
-        const response = await axios.post(`http://localhost:3000/admin/addRoom`, rooms);
+        const response = await axios.post(`http://localhost:3000/admin/manageRoom`, rooms);
         console.log(this.roomId);
         console.log(this.roomName);
         console.log(this.floor)

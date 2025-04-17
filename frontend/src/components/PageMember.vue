@@ -360,7 +360,7 @@ export default {
       const cf = window.confirm("ต้องการลบความคิดเห็นนี้?");
       if (cf) {
         axios
-          .delete(`http://localhost:3000/myReview/${username}/${id}`)
+          .delete(`http://localhost:3000/review/${username}/${id}`)
           .then((res) => {
             console.log(res);
             this.myreview();

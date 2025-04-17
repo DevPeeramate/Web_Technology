@@ -99,8 +99,9 @@
                   type="file"
                   @change="onFileChange"
                 />
+                <button class="btn upload" type="submit">Upload</button>
+              
               </form>
-              <button class="btn upload" type="submit">Upload</button>
               <button class="btn submit" type="submit">
                 <i class="bi bi-check-lg"></i>&nbsp;Submit
               </button>
@@ -257,7 +258,7 @@ export default {
 
       try {
         const res = await axios.put(
-          `http://localhost:3000/admin/putRoom/${this.dataId}`,
+          `http://localhost:3000/admin/manageRoom/${this.dataId}`,
           room
         );
         this.backendMessage = res.data.messagePutRoom;
